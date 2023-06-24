@@ -1,14 +1,19 @@
-<div class="box">
+
+  <div class="box">
   <div class="columns">
-  <h1>Customer Details</h1>
+
     <div class="column is-2">
   <%= image_tag customer.image %>
   </div>
-  <div class="column">
+
   <h3><%= customer.full_name %></h3>
   <p>Phone:</strong> <%= customer.phone_number %></p>
-  <p>Email:<%= customer.email_address %></p>
+  <% if customer.email.present? %>
+  <p>Email:<%= customer.email%></p>
+  <%else%>
+  <p>Email: Not Specified.</p>
+  <% end %>
   <p>Notes:<%= customer.notes %></p>
-</div>
+
 </div>
 </div>

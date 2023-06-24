@@ -1,0 +1,41 @@
+
+
+.box {
+  background-color: #00bcd424;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  img{
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .columns {
+    align-items: center;
+
+    .column.is-2 {
+      display: flex;
+      justify-content: center;
+
+
+
+    }
+
+    .column {
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+
